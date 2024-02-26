@@ -11,11 +11,13 @@ the number of songs, add that value to the album’s dictionary. Make at least
 one new function call that includes the number of songs on an album.
 """
 
-def make_album(artist,album_title):
+def make_album(artist,album_title,total_songs=None):
     music_album = {}
     music_album[artist]=album_title
+    if total_songs:
+        music_album['total_songs']=total_songs
     return music_album
 
-print(make_album("Spyro","Holy Ghost"))
+print(make_album("Spyro","Holy Ghost",10))
 print(make_album("Mohbad","Feel Good"))
-print(make_album("DotMan","Enu Gbe"))
+print(make_album("DotMan","Enu Gbe",7))
