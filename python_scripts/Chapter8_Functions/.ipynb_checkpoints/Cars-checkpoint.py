@@ -1,3 +1,5 @@
+from carFunc import make_car
+
 """
 Write a function that stores information about a car in a dictionary.
 The function should always receive a manufacturer and a model name. It
@@ -9,10 +11,7 @@ Print the dictionary that’s returned to make sure all the information was
 stored correctly.
 """
 
-def make_car(manufacturer, model, **features):
-    features["Manufacturer"] = manufacturer
-    features["Model"] = model
-    return features
+
 
 car = make_car('subaru', 'outback', color='blue', tow_package=True)
 car1 = make_car('Toyota', 'Lexus Z', color='black', tow_package=True, touch_display=True)
