@@ -33,13 +33,13 @@ class Restaurant:
 
     def increment_number_served(self, num):
         self.number_served += num
-
-restaurant = Restaurant("The Place", "Ghanian Jollof-Rice")
-print(f"No. of Customers served: {restaurant.number_served}")
-restaurant.set_number_served(10)
-print(f"No. of Customers served: {restaurant.number_served}")
-restaurant.increment_number_served(5)
-print(f"No. of Customers served: {restaurant.number_served}")
-# print(restaurant.cuisine_type)
-# restaurant.describe_restaurant()
-restaurant.open_restaurant()
+if __name__ == "__main__":
+    restaurant = Restaurant("The Place", "Ghanian Jollof-Rice")
+    print(f"No. of Customers served: {restaurant.number_served}")
+    restaurant.set_number_served(10)
+    print(f"No. of Customers served: {restaurant.number_served}")
+    restaurant.increment_number_served(5)
+    print(f"No. of Customers served: {restaurant.number_served}")
+    # print(restaurant.cuisine_type)
+    # restaurant.describe_restaurant()
+    restaurant.open_restaurant()

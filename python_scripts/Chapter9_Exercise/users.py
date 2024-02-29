@@ -26,11 +26,12 @@ class User:
         """prints a personalized greeting to the user."""
         print(f"Hello {self.first_name}, {self.last_name}!\n\n")
 
-user = User("Tunde", "Akingbade")
-user2 = User("Shadiat", "Shoremilekun")
-user3 = User("Damilola", "Owomoyepon")
-
-users = [user,user2,user3]
-for user in users:
-    user.describe_user()
-    user.greet_user()
+if __name__=="__main__":
+    user = User("Tunde", "Akingbade")
+    user2 = User("Shadiat", "Shoremilekun")
+    user3 = User("Damilola", "Owomoyepon")
+    
+    users = [user,user2,user3]
+    for user in users:
+        user.describe_user()
+        user.greet_user()
