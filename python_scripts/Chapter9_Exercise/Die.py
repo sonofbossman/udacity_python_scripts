@@ -1,4 +1,4 @@
-from random import choice
+from random import randint
 
 """
 Make a class Die with one attribute called sides, which has a default
@@ -13,7 +13,7 @@ class Die:
         self.sides = sides
 
     def roll_die(self):
-        output = choice(1, self.sides)
+        output = randint(1, self.sides)
         print(f"Rolling a {self.sides}-sided die...")
         print(f"Output: {output}\n")
 
