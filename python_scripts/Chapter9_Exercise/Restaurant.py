@@ -23,8 +23,12 @@ class Restaurant:
     def open_restaurant(self):
         print(f"{self.restaurant_name} is open!")
 
-restaurant = Restaurant("The Place", "Ghanian Jollof-Rice")
-print(restaurant.restaurant_name)
-print(restaurant.cuisine_type)
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type, *flavors):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+
+    def list_flavor(self):
+        print("The following are the various ice cream flavors we have:")
+        for flavor in self.flavors:
+            print(flavor)

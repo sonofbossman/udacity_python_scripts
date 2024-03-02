@@ -1,4 +1,4 @@
-from number_served import Restaurant
+from Restaurant import Restaurant, IceCreamStand
 """
 An ice cream stand is a specific kind of restaurant. Write
 a class called IceCreamStand that inherits from the Restaurant class you wrote
@@ -8,15 +8,6 @@ flavors that stores a list of ice cream flavors. Write a method that displays
 these flavors. Create an instance of IceCreamStand, and call this method.
 """
 
-class IceCreamStand(Restaurant):
-    def __init__(self, restaurant_name, cuisine_type, *flavors):
-        super().__init__(restaurant_name, cuisine_type)
-        self.flavors = flavors
-
-    def list_flavor(self):
-        print("The following are the various ice cream flavors we have:")
-        for flavor in self.flavors:
-            print(flavor)
 # flavors = ["Strawberry", "Vanilla", "Banana", "Berry", "Bubble Gum", "Coffee Ice Cream"]
 
 if __name__=="__main__":
